@@ -42,8 +42,8 @@ void loop() {
  double Nem = nemm();
  
 delay(5000); ++value; 
-Serial.print("connecting to ");
-Serial.println(host); // Use WiFiClient class to create TCP connections
+Serial.print("Bağlanıyor ");
+Serial.println(host); 
 WiFiClient client;
 const int httpPort = 80;
 if (!client.connect(host, httpPort)) {
